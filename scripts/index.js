@@ -22,14 +22,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // === Footer ===
     const yearSpan = document.getElementById('currentyear');
-    if (yearSpan) {
-        yearSpan.textContent = new Date().getFullYear();
-    }
+    if (yearSpan) yearSpan.textContent = new Date().getFullYear();
 
     const lastMod = document.getElementById('lastModified');
-    if (lastMod) {
-        lastMod.textContent = document.lastModified;
-    }
+    if (lastMod) lastMod.textContent = 'Last Modified: ' + document.lastModified;
 
     // === Course Data Array ===
     const courses = [

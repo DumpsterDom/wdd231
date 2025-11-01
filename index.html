@@ -6,8 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Home page for a responsive portfolio site featuring navigation to chamber and final projects.">
     <meta name="author" content="Dominic Trujillo-Grissom">
-    <title>Home | Responsive Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css"> 
     <link rel="stylesheet" href="styles/index.css">
+    
+    <title>Home | Responsive Portfolio</title>
     <script src="scripts/index.js" defer></script>
 </head>
 
@@ -17,10 +23,8 @@
             <img src="images/homelogo.png" alt="home page logo" width="50">
         </a>
         <span class="site-name">WDD 231: Web Frontend Development I</span>
-        <button class="hamburger" aria-label="Toggle navigation menu">
-            <span></span>
-            <span></span>
-            <span></span>
+        <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span><span></span><span></span>
         </button>
     </header>
 
@@ -32,73 +36,92 @@
         </ul>
     </nav>
 
-<main>
-    <h1>Home</h1>
+    <main>
+        <h1>Home</h1>
 
-    <!-- About me  -->
-    <section id="about-me">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <p>Hey! My name is Dominic Trujillo-Grissom and I live in Gastonia, North Carolina. 
-            I am originally from Albuquerque, New Mexico but moved across the country with my wife and two of our kids seven years ago. 
-            Currently I am a proud father of six amazing kids and husband to my beautiful wife Jodeci. 
-            I am learning software development here at BYU Idaho and am so excited to further my career. 
-            I hope to gain as much knowledge as I can to succeed. I am happy to be here and ready to learn!</p>
-            <img src="images/aboutme.jpg" alt="Dominic Trujillo-Grissom family photo" width="200">
-        </div>
-    </section>
+        <!-- About Me -->
+        <section id="about-me">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>Hey! My name is Dominic Trujillo-Grissom and I live in Gastonia, North Carolina. 
+                I am originally from Albuquerque, New Mexico but moved across the country with my wife and two of our kids seven years ago. 
+                Currently I am a proud father of six amazing kids and husband to my beautiful wife Jodeci. 
+                I am learning software development here at BYU Idaho and am so excited to further my career. 
+                I hope to gain as much knowledge as I can to succeed. I am happy to be here and ready to learn!</p>
+                <img src="images/aboutme.jpg" alt="Dominic Trujillo-Grissom family photo" width="200">
+            </div>
+        </section>
 
+        <!-- Resources -->
+        <section id="resources">
+            <h2>Learning Resources</h2>
 
-    </section>
+            <div class="resources-grid">
+                <a href="https://byui.instructure.com/" target="_blank" rel="noopener" class="resource-card">
+                    <div class="resource-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2L2 7v10c0 5.55 4.48 10.91 10 12 5.52-1.09 10-6.45 10-12V7l-10-5z"/>
+                        </svg>
+                    </div>
+                    <h3>BYU-Idaho I-Learn</h3>
+                    <p>Official course platform with assignments, readings, and announcements.</p>
+                </a>
 
-    <!-- Certificate  -->
-    <section id="certificate-section">
-        <h2>Web &amp; Computer Programming Certificate</h2>
+                <a href="https://developer.mozilla.org/" target="_blank" rel="noopener" class="resource-card">
+                    <div class="resource-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h3>MDN Web Docs</h3>
+                    <p>The definitive reference for HTML, CSS, JavaScript, and web APIs.</p>
+                </a>
 
-        <!-- Filter -->
-        <div class="filter-buttons">
-            <button data-filter="all" class="active">All Courses</button>
-            <button data-filter="WDD">WDD Courses</button>
-            <button data-filter="CSE">CSE Courses</button>
-        </div>
+                <a href="https://www.w3schools.com/" target="_blank" rel="noopener" class="resource-card">
+                    <div class="resource-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+                        </svg>
+                    </div>
+                    <h3>W3Schools</h3>
+                    <p>Interactive tutorials and quick-look-up examples for web technologies.</p>
+                </a>
+            </div>
+        </section>
 
-        <!-- Credits  -->
-        <p class="credits-total">Total Credits: <strong id="total-credits">0</strong></p>
+        <!-- Certificate -->
+        <section id="certificate-section">
+            <h2>Web &amp; Computer Programming Certificate</h2>
 
-        <!-- Courses -->
-        <div class="course-grid" id="course-grid">
-        </div>
-    </section>
-</main>
+            <div class="filter-buttons">
+                <button data-filter="all" class="active">All Courses</button>
+                <button data-filter="WDD">WDD Courses</button>
+                <button data-filter="CSE">CSE Courses</button>
+            </div>
 
-    <footer> 
+            <p class="credits-total">Total Credits: <strong id="total-credits">0</strong></p>
+
+            <div class="course-grid" id="course-grid"></div>
+        </section>
+    </main>
+
+    <footer>
         <div class="footer-social">
             <a href="https://github.com/DumpsterDom" target="_blank" rel="noopener" aria-label="GitHub">
-                <svg width="36" height="36" viewBox="0 0 25 25" fill="white" xmlns="http://www.w3.org/2000/svg" class="social-icon">
-                    <path clip-rule="evenodd" d="M15.7481 24.9471C24.0901 24.7061 24.9111 22.9501 24.9111 12.9811C24.9111 1.98108 23.9111 0.981079 12.9111 0.981079C1.91113 0.981079 0.911133 1.98108 0.911133 12.9811C0.911133 22.9761 1.73713 24.7151 10.1391 24.9491C10.2121 24.8581 10.2391 24.7441 10.2391 24.6281C10.2391 24.3781 10.2291 21.8121 10.2241 20.9291C7.18713 21.5681 6.54613 19.5101 6.54613 19.5101C6.04913 18.2881 5.33313 17.9621 5.33313 17.9621C4.34213 17.3061 5.40813 17.3191 5.40813 17.3191C6.50413 17.3941 7.08113 18.4101 7.08113 18.4101C8.05513 20.0271 9.63713 19.5601 10.2591 19.2891C10.3581 18.6061 10.6401 18.1391 10.9521 17.8751C8.52713 17.6081 5.97813 16.7001 5.97813 12.6451C5.97813 11.4901 6.40413 10.5461 7.10213 9.80608C6.98913 9.53808 6.61513 8.46208 7.20913 7.00608C7.20913 7.00608 8.12613 6.72108 10.2121 8.09008C11.0831 7.85508 12.0171 7.73808 12.9461 7.73408C13.8731 7.73808 14.8071 7.85508 15.6801 8.09008C17.7651 6.72108 18.6801 7.00608 18.6801 7.00608C19.2761 8.46208 18.9011 9.53808 18.7881 9.80608C19.4881 10.5461 19.9111 11.4901 19.9111 12.6451C19.9111 16.7101 17.3581 17.6051 14.9251 17.8661C15.3171 18.1931 15.6661 18.8391 15.6661 19.8261C15.6661 20.7721 15.6601 22.4451 15.6561 23.5541C15.6541 24.1031 15.6531 24.5131 15.6531 24.6281C15.6531 24.7371 15.6821 24.8521 15.7481 24.9471V24.9471Z" fill-rule="evenodd"/>
-                </svg>
-             </a>
-            <a href="https://www.linkedin.com/in/dominic-trujillo-grissom-b66b05188/" target="_blank" rel="noopener" aria-label="LinkedIn">
-                <svg width="36" height="36" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg" class="social-icon">
-                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                </svg>
+                <svg width="36" height="36" viewBox="0 0 25 25" fill="white" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M15.7481 24.9471C24.0901 24.7061 24.9111 22.9501 24.9111 12.9811C24.9111 1.98108 23.9111 0.981079 12.9111 0.981079C1.91113 0.981079 0.911133 1.98108 0.911133 12.9811C0.911133 22.9761 1.73713 24.7151 10.1391 24.9491C10.2121 24.8581 10.2391 24.7441 10.2391 24.6281C10.2391 24.3781 10.2291 21.8121 10.2241 20.9291C7.18713 21.5681 6.54613 19.5101 6.54613 19.5101C6.04913 18.2881 5.33313 17.9621 5.33313 17.9621C4.34213 17.3061 5.40813 17.3191 5.40813 17.3191C6.50413 17.3941 7.08113 18.4101 7.08113 18.4101C8.05513 20.0271 9.63713 19.5601 10.2591 19.2891C10.3581 18.6061 10.6401 18.1391 10.9521 17.8751C8.52713 17.6081 5.97813 16.7001 5.97813 12.6451C5.97813 11.4901 6.40413 10.5461 7.10213 9.80608C6.98913 9.53808 6.61513 8.46208 7.20913 7.00608C7.20913 7.00608 8.12613 6.72108 10.2121 8.09008C11.0831 7.85508 12.0171 7.73808 12.9461 7.73408C13.8731 7.73808 14.8071 7.85508 15.6801 8.09008C17.7651 6.72108 18.6801 7.00608 18.6801 7.00608C19.2761 8.46208 18.9011 9.53808 18.7881 9.80608C19.4881 10.5461 19.9111 11.4901 19.9111 12.6451C19.9111 16.7101 17.3581 17.6051 14.9251 17.8661C15.3171 18.1931 15.6661 18.8391 15.6661 19.8261C15.6661 20.7721 15.6601 22.4451 15.6561 23.5541C15.6541 24.1031 15.6531 24.5131 15.6531 24.6281C15.6531 24.7371 15.6821 24.8521 15.7481 24.9471V24.9471Z" fill-rule="evenodd"/></svg>
             </a>
-         </div>
+            <a href="https://www.linkedin.com/in/dominic-trujillo-grissom-b66b05188/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+        </div>
 
         <div class="footer-info">
-            <p>&copy; <span id="currentyear"></span> 🌮 Dominic Trujillo-Grissom 🌮 Gastonia,NC</p>
+            <p>&copy; <span id="currentyear"></span> Dominic Trujillo-Grissom Gastonia,NC</p>
         </div>
 
         <div class="footer-modified">
             <p id="lastModified"></p>
         </div>
     </footer>
-
-    <script>
-        document.getElementById('currentyear').textContent = new Date().getFullYear();
-
-        const lastMod = document.lastModified;
-        document.getElementById('lastModified').textContent = 'Last Modified: ' + lastMod;
-    </script>
 </body>
 </html>
