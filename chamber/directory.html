@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Official directory for Gastonia Chamber of Commerce – 225+ local businesses." />
+  <meta name="author" content="Dominic Trujillo-Grissom" />
+
+  <title>Directory | Gastonia Chamber of Commerce</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+  <!-- Facebook Card -->
+  <meta property="og:title" content="Gastonia Chamber Member Directory" />
+  <meta property="og:description" content="225+ local businesses. Search by name, category, or ownership." />
+  <meta property="og:image" content="https://domtrujillox.github.io/wdd231/chamber/images/og-image.jpg" />
+  <meta property="og:url" content="https://domtrujillox.github.io/wdd231/chamber/directory.html" />
+
+  <!-- Normalize + Your CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="styles/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <a href="index.html" class="logo">
+      <img src="images/logo-white.png" alt="Gastonia Chamber" width="180">
+    </a>
+    <nav id="mainNav">
+      <button id="menuToggle" aria-label="Menu">Menu</button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html" class="active">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="events.html">Events</a></li>
+      </ul>
+    </nav>
+    <button id="viewToggle">List View</button>
+  </header>
+
+  <main class="directory">
+    <section class="hero">
+      <h1>Gastonia Business Directory</h1>
+      <p>Search Business</p>
+      <input type="search" id="searchBox" placeholder="Food truck, salon, manufacturing…" autofocus>
+    </section>
+
+    <div class="filters">
+      <select id="categoryFilter">
+        <option value="">All Categories</option>
+        <option>Food & Drink</option>
+        <option>Family</option>
+        <option>Retail</option>
+        <option>Healthcare</option>
+        <option>Woman-Owned</option>
+        <option>Black-Owned</option>
+      </select>
+    </div>
+
+    <div id="membersContainer" class="grid">
+      <!-- JS fills this -->
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="contact">
+        <p><strong>Gastonia Chamber of Commerce</strong></p>
+        <p>601 W Franklin Blvd, Gastonia, NC 28052</p>
+        <p>Phone: (704) 864-2621 | Email: Info@gastoniachamber.com</p>
+      </div>
+
+      <div class="footer-social">
+        <a href="https://www.facebook.com/gaston.business/" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="white"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15h-2v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/company/gastonbusiness" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="white"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75 .79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </a>
+      </div>
+
+      <div class="me">
+        <p>© <span id="year"></span> Gastonia Chamber | <strong>Dominic Trujillo-Grissom</strong></p>
+        <p>WDD 231 | Web Frontend Development</p>
+        <p>Last modified: <span id="lastMod"></span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>

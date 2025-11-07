@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Gastonia Chamber of Commerce – Connecting businesses, growing our community." />
+  <meta name="author" content="Dominic Trujillo-Grissom" />
+
+  <title>Home | Gastonia Chamber of Commerce</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+  <!-- Facebook Open Graph -->
+  <meta property="og:title" content="Gastonia Chamber of Commerce" />
+  <meta property="og:description" content="Your hub for local business growth, events, and networking." />
+  <meta property="og:image" content="https://domtrujillox.github.io/wdd231/chamber/images/og-home.jpg" />
+  <meta property="og:url" content="https://domtrujillox.github.io/wdd231/chamber/index.html" />
+
+  <!-- Normalize + Fonts + CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/index.css" />
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">
+      <img src="images/logo-white.png" alt="Gastonia Chamber of Commerce Logo" width="180" height="62" loading="lazy">
+    </a>
+    <nav id="mainNav">
+      <button id="menuToggle" aria-label="Menu">Menu</button>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="home">
+    <!-- HERO -->
+    <section class="hero">
+      <picture>
+        <source media="(max-width: 600px)" srcset="images/hero-mobile.jpg">
+        <img src="images/hero-desktop.jpg" alt="Gastonia skyline at sunset" loading="lazy">
+      </picture>
+      <div class="hero-content">
+        <h1>Grow Here. Thrive Here.</h1>
+        <p>Join 225+ businesses building a stronger Gastonia.</p>
+        <a href="join.html" class="cta-button">Become a Member</a>
+      </div>
+    </section>
+
+    <!-- EVENTS + WEATHER -->
+    <section class="info-panels">
+      <div class="panel events">
+        <h2>Upcoming Events</h2>
+        <ul id="eventsList">
+          <li><strong>Nov 14</strong> – Business After Hours @ Catawba Coffee</li>
+          <li><strong>Nov 20</strong> – Ribbon Cutting: Sew Much Fun Expansion</li>
+          <li><strong>Dec 5</strong> – Holiday Mixer @ The Smoke Pit</li>
+        </ul>
+        <a href="events.html">View All Events</a>
+      </div>
+
+      <div class="panel weather">
+        <h2>Current Weather</h2>
+        <div id="weatherDisplay">
+          <p class="temp">Loading...</p>
+          <p class="condition">Gastonia, NC</p>
+        </div>
+      </div>
+
+      <div class="panel forecast">
+        <h2>3-Day Forecast</h2>
+        <div id="forecastDisplay">Loading...</div>
+      </div>
+    </section>
+
+    <!-- SPOTLIGHT BUSINESSES -->
+    <section class="spotlights">
+      <h2>Member Spotlights</h2>
+      <div class="spotlight-grid" id="spotlightContainer"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="contact">
+        <p><strong>Gastonia Chamber of Commerce</strong></p>
+        <p>601 W Franklin Blvd, Gastonia, NC 28052</p>
+        <p>Phone: (704) 864-2621</p>
+        <p>Email: info@gastoniachamber.com</p>
+      </div>
+      <div class="footer-social">
+        <a href="https://facebook.com/gaston.business" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
+        <a href="https://twitter.com/GastoniaChamber" target="_blank" rel="noopener" aria-label="Twitter">X</a>
+        <a href="https://linkedin.com/company/gastonbusiness" target="_blank" rel="noopener" aria-label="LinkedIn">LN</a>
+      </div>
+      <div class="me">
+        <p>© <span id="year"></span> Gastonia Chamber | <strong>Dominic Trujillo-Grissom</strong></p>
+        <p>WDD 231 – Web Frontend Development</p>
+        <p>Last modified: <span id="lastMod"></span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ONE SCRIPT. CLEAN. -->
+  <script src="scripts/main.js"></script>
+</body>
+</html>

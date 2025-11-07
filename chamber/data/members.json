@@ -1,0 +1,83 @@
+[
+{
+    "name": "Catawba Coffee Co.",
+    "address": "104 W Charlotte Ave, Mt Holly, NC 28120",
+    "phone": "(704) 820-6556",
+    "website": "https://crowderscoffee.com",
+    "image": "catawba.jpg",
+    "level": 3,
+    "tags": ["Woman-Owned", "Food & Drink"]
+  },
+  {
+    "name": "Sew Much Fun",
+    "address": "831 S. Church St, Lowell, NC 28098",
+    "phone": "(704) 824-1961",
+    "website": "https://www.sewmuchfun4you.com/",
+    "image": "sewfun.jpg",
+    "level": 2,
+    "tags": ["Retail"]
+  },
+  {
+    "name": "The Smoke Pit",
+    "address": "231 S New Hope Rd, Gastonia, NC 28054",
+    "phone": "(704) 555-7427",
+    "website": "https://www.thesmokepitonline.com/",
+    "image": "smokepit.jpg",
+    "level": 3,
+    "tags": ["Black-Owned", "Food & Drink"]
+  },
+  {
+    "name": "CaroMont Health",
+    "address": "2525 Court Dr, Gastonia, NC 28054",
+    "phone": "(704) 555-4321",
+    "website": "https://caromonthealth.org",
+    "image": "caromont.jpg",
+    "level": 3,
+    "tags": ["Healthcare"]
+  },
+  {
+    "name": "Sweet Repeat",
+    "address": "215 W Franklin Blvd, Gastonia, NC 28052",
+    "phone": "(704) 555-1122",
+    "website": "https://www.sweetrepeatcharitablefoundation.org/",
+    "image": "sweetrepeat.jpg",
+    "level": 1,
+    "tags": ["Woman-Owned", "Retail"]
+  },
+  {
+    "name": "Blackwood's Barbershop",
+    "address": "145 N Oakland St, Gastonia, NC 28052",
+    "phone": "(704) 555-8899",
+    "website": "https://www.yelp.com/biz/blackwood-bros-barber-shop-rock-hill",
+    "image": "blackwoods.jpg",
+    "level": 2,
+    "tags": ["Black-Owned"]
+  },
+  {
+    "name": "Adventure Landing",
+    "address": "2600 E Franklin Blvd, Gastonia, NC 28056",
+    "phone": "(704) 866-4242",
+    "website": "https://gastonia.adventurelanding.com/",
+    "image": "adventurelanding.jpg",
+    "level": 2,
+    "tags": ["Family"]
+  },
+  {
+    "name": "Lineberger's Farm",
+    "address": "906 Dallas Stanley Hwy, Dallas, NC 28034",
+    "phone": "(704) 922-8600",
+    "website": "https://www.linebergersfarm.com/",
+    "image": "lineburgerfarm.jpg",
+    "level": 2,
+    "tags": ["Food & Drink"]
+  },
+  {
+    "name": "Daniel Stowe Conservancy",
+    "address": "6500 S New Hope Rd, Belmont, NC 28012",
+    "phone": "(704) 825-4490",
+    "website": "https://danielstoweconservancy.org/",
+    "image": "danielstowe.jpg",
+    "level": 2,
+    "tags": ["Family"]
+  }
+]
