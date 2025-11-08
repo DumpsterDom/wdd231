@@ -1,0 +1,128 @@
+/* Mobile */
+@media (max-width: 768px) {
+	#menuToggle { display: block; }
+	nav ul {
+		display: none;
+		flex-direction: column;
+		background: var(--blue);
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		padding: 1.5rem;
+		box-shadow: 0 8px 16px rgba(0,0,0,.3);
+		z-index: 9;
+	}
+	nav ul.show { 
+		display: flex; 
+	}
+	header { 
+		flex-direction: column; 
+		text-align: center; 
+	}
+	.logo { 
+		margin-bottom: 1rem; 
+	}
+	.hero h1 { 
+		font-size: 1.8rem; 
+		padding: .8rem 1.2rem; 
+	}
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-display: swap;
+  src: local('Poppins');
+}
+html { 
+	font-size: 16px
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 1.2rem 1rem;
+  }
+  .logo img {
+    width: 65px;
+    height: 65px;
+  }
+  .logo h1 {
+    font-size: 1.5rem;
+  }
+  .search-hero {
+    margin: 2rem auto 1rem;
+  }
+  #searchBox {
+    padding: 1rem 1.2rem 1rem 3.5rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .card img {
+    height: 160px !important;
+  }
+}
+.info {
+	padding: 1.2rem;
+}
+.info h3 {
+	color: var(--blue);
+	margin: 0 0 .4rem;
+	font-size: 1.35rem;
+}
+.info p {
+	margin: .4rem 0;
+	font-size: .95rem;
+	color: #555;
+}
+.level {
+	display: inline-block;
+	padding: .4rem .9rem;
+	border-radius: 30px;
+	color: white;
+	font-weight: 600;
+	font-size: .8rem;
+	margin-top: .6rem;
+}
+.level.gold { 
+	background: var(--gold); 
+}
+
+.level.silver { 
+	background: var(--silver); 
+}
+.level.bronze { 
+	background: var(--blue); 
+}
+
+.hidden { 
+    display: none; 
+}
+
+/* Mobile Menu */
+#menuToggle {
+	display: none;
+	background: var(--red);
+	color: white;
+	border: none;
+	padding: .6rem 1rem;
+	border-radius: 6px;
+	font-weight: 600;
+	cursor: pointer;
+	font-size: 1.1rem;
+}
+#viewToggle {
+	background: var(--red);
+	color: white;
+	border: none;
+	padding: .6rem 1rem;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.directory {
+	max-width: 1200px;
+	margin: 2rem auto;
+	padding: 0 1rem;
+}
