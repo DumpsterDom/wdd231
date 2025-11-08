@@ -3,19 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Official directory for Gastonia Chamber of Commerce – 225+ local businesses." />
+  <meta name="description" content="Official directory for Gastonia Chamber of Commerce – local businesses." />
   <meta name="author" content="Dominic Trujillo-Grissom" />
 
   <title>Directory | Gastonia Chamber of Commerce</title>
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="images/house1.ico" type="image/x-icon" />
 
-  <!-- Facebook Card -->
   <meta property="og:title" content="Gastonia Chamber Member Directory" />
-  <meta property="og:description" content="225+ local businesses. Search by name, category, or ownership." />
+  <meta property="og:description" content="local businesses. Search by name, category, or ownership." />
   <meta property="og:image" content="https://domtrujillox.github.io/wdd231/chamber/images/og-image.jpg" />
   <meta property="og:url" content="https://domtrujillox.github.io/wdd231/chamber/directory.html" />
-
-  <!-- Normalize + Your CSS -->
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="styles/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
@@ -23,27 +21,37 @@
 
 <body>
   <header>
-    <a href="index.html" class="logo">
-      <img src="images/logo-white.png" alt="Gastonia Chamber" width="180">
-    </a>
-    <nav id="mainNav">
-      <button id="menuToggle" aria-label="Menu">Menu</button>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="directory.html" class="active">Directory</a></li>
-        <li><a href="join.html">Join</a></li>
-        <li><a href="events.html">Events</a></li>
-      </ul>
-    </nav>
-    <button id="viewToggle">List View</button>
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo.jpg" alt="Gastonia Chamber" width="180">
+      </a>
+
+      <nav id="mainNav">
+        <button id="menuToggle" aria-label="Menu">Menu</button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html" class="active">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="events.html">Events</a></li>
+        </ul>
+      </nav>
+
+      <button id="viewToggle" class="header-right-btn">List View</button>
+    </div>
   </header>
 
   <main class="directory">
     <section class="hero">
       <h1>Gastonia Business Directory</h1>
-      <p>Search Business</p>
-      <input type="search" id="searchBox" placeholder="Food truck, salon, manufacturing…" autofocus>
     </section>
+
+    <div class="search-hero">
+        <div class="search-container">
+            <span class="search-icon"></span>
+            <input type="search" id="searchBox" placeholder="Search Gastonia businesses..." autofocus>
+        </div>
+        <p class="search-hint">Try: "Family", "Retail", "Food & Drink"</p>
+    </div>
 
     <div class="filters">
       <select id="categoryFilter">
@@ -58,7 +66,6 @@
     </div>
 
     <div id="membersContainer" class="grid">
-      <!-- JS fills this -->
     </div>
   </main>
 

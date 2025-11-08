@@ -1,11 +1,11 @@
 let allMembers = [];
 
-// ———————— 1. Mobile Menu Toggle ————————
+// ———————— Mobile Menu ————————
 document.getElementById('menuToggle').addEventListener('click', () => {
   document.querySelector('#mainNav ul').classList.toggle('show');
 });
 
-// ———————— 2. Grid / List View Toggle ————————
+// ————————  Grid & List View  ————————
 document.getElementById('viewToggle').addEventListener('click', () => {
   const container = document.getElementById('membersContainer');
   const btn = document.getElementById('viewToggle');
@@ -14,7 +14,7 @@ document.getElementById('viewToggle').addEventListener('click', () => {
   btn.textContent = container.classList.contains('list') ? 'Grid View' : 'List View';
 });
 
-// ———————— 3. Load Members from JSON ————————
+// ———————— Members from JSON ————————
 async function loadMembers() {
   try {
     const res = await fetch('data/members.json');
@@ -26,7 +26,7 @@ async function loadMembers() {
   }
 }
 
-// ———————— 4. Render Members ————————
+// ———————— Render Members ————————
 function displayMembers(members) {
   const container = document.getElementById('membersContainer');
   if (members.length === 0) {
@@ -43,7 +43,7 @@ function displayMembers(members) {
         <p class="phone">${member.phone}</p>
         <p><a href="${member.website}" target="_blank" rel="noopener">Visit Website</a></p>
         <div class="tags">
-          ${member.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+          ${member.tags.map(tag => `<span class="tag">${tag}</span>`).join(', ')}
         </div>
         <span class="level ${member.level === 3 ? 'gold' : member.level === 2 ? 'silver' : 'bronze'}">
           ${member.level === 3 ? 'Gold' : member.level === 2 ? 'Silver' : 'Bronze/NP'}
@@ -53,7 +53,7 @@ function displayMembers(members) {
   `).join('');
 }
 
-// ———————— 5. Search Box ————————
+// ———————— Search Box ————————
 document.getElementById('searchBox').addEventListener('input', (e) => {
   const term = e.target.value.toLowerCase();
   const filtered = allMembers.filter(m =>
@@ -64,7 +64,7 @@ document.getElementById('searchBox').addEventListener('input', (e) => {
   displayMembers(filtered);
 });
 
-// ———————— 6. Category Filter ————————
+// ———————— Category Filter ————————
 document.getElementById('categoryFilter').addEventListener('change', (e) => {
   const selected = e.target.value;
   if (!selected) {
@@ -75,7 +75,7 @@ document.getElementById('categoryFilter').addEventListener('change', (e) => {
   }
 });
 
-// ———————— 7. Membership Level Filter ————————
+// ———————— Membership Level ————————
 document.querySelectorAll('.filters button').forEach(btn => {
   btn.addEventListener('click', () => {
     document.querySelectorAll('.filters button').forEach(b => b.classList.remove('active'));
@@ -88,9 +88,8 @@ document.querySelectorAll('.filters button').forEach(btn => {
   });
 });
 
-// ———————— 8. Footer Dates ————————
+// ———————— Footer ————————
 document.getElementById('year').textContent = new Date().getFullYear();
 document.getElementById('lastMod').textContent = document.lastModified;
 
-// ———————— 9. INIT ————————
 loadMembers();
