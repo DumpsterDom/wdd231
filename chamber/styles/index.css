@@ -311,7 +311,6 @@ header .logo .chamber-title {
 .events a:hover { color: white; }
 .weather, .forecast { text-align: center; }
 .weather .temp { font-size: 2.5rem; font-weight: 800; color: var(--blue); }
-.forecast-day { margin: 0.75rem 0; padding: 0.5rem; background: var(--gray); border-radius: 8px; }
 
 .card.events {
   text-align: center;         
