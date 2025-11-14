@@ -40,21 +40,23 @@
       </div>
     </header>
     
-    <main class="home">
-      <!-- Hero -->
-      <section class="hero">
-        <img src="images/gastonia.jpg" alt="Downtown Gastonia" class="hero-image" loading="lazy">
-        <div class="hero-overlay">
-          <div class="hero-text-box">
-            <h1>Grow Here. Thrive Here!</h1>
-            <p>Join local businesses building a stronger Gastonia.</p>
-            <a href="join.html" class="cta-button">Become a Member</a>
-          </div>
+  <main class="home">
+    <!-- Hero -->
+    <section class="hero">
+      <img src="images/gastonia.jpg" alt="Downtown Gastonia" class="hero-image" loading="lazy">
+      <div class="hero-overlay">
+        <div class="hero-text-box">
+          <h1>Grow Here. Thrive Here!</h1>
+          <p>Join local businesses building a stronger Gastonia.</p>
+          <a href="join.html" class="cta-button">Become a Member</a>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <main class="container">
-        <section class="info-grid">
+    <!-- Replace bad <main> with <section> -->
+    <section class="container">
+      <section class="info-grid">
+
         <!-- Events -->
         <div class="card events">
           <h2>Events</h2>
@@ -76,19 +78,22 @@
           </div>
         </div>
 
-        <!-- Forcast -->
+        <!-- Forecast -->
         <div class="panel forecast">
           <h2>3-Day Forecast</h2>
           <div id="forecastDisplay">Loading...</div>
         </div>
-      </section>
 
-      <!-- Spotlights -->
-      <section class="spotlights">
-        <h2>Member Spotlights</h2>
-        <div class="spotlight-grid" id="spotlightContainer"></div>
       </section>
-    </main>
+    </section>
+
+    <!-- Spotlights -->
+    <section class="spotlights">
+      <h2>Member Spotlights</h2>
+      <div class="spotlight-grid" id="spotlightContainer"></div>
+    </section>
+
+  </main>
 
     <footer>
       <div class="footer-inner">
