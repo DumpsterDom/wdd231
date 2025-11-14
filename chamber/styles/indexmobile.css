@@ -69,11 +69,3 @@
 @media (min-width: 768px) {
   .info-grid { grid-template-columns: 1fr 1fr 1fr; }
 }
-
-@media (max-width: 768px) {
-  header .logo .chamber-title {
-    font-size: 1.5rem !important;
-    margin-left: 0;
-    margin-top: 0.5rem;
-  }
-}
