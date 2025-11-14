@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Catawba Coffee Co.",
+    "logo": "images/logocatawba.jpg",
+    "highlightImg": "images/slcatawba.jpg",
+    "tagline": "Freshly Brewed, Locally Loved",
+    "address": "104 W Charlotte Ave, Mt Holly, NC 28120",
+    "phone": "(704) 820-6556",
+    "website": "https://www.facebook.com/catawbacoffeeco/",
+    "membership": "gold"
+  },
+  {
+    "name": "Sew Much Fun",
+    "logo": "images/logosew.jpg",
+    "highlightImg": "images/slsew.jpg",
+    "tagline": "Stitching Dreams into Reality",
+    "address": "831 S. Church St, Lowell, NC 28098",
+    "phone": "(704) 824-1961",
+    "website": "https://www.sewmuchfun4you.com/",
+    "membership": "silver"
+  },
+  {
+    "name": "The Smoke Pit",
+    "logo": "images/logopitt.jpg",
+    "highlightImg": "images/slpitt.jpg",
+    "tagline": "BBQ Done Right",
+    "address": "231 S New Hope Rd, Gastonia, NC 28054",
+    "phone": "(704) 555-7427",
+    "website": "https://www.thesmokepitonline.com/",
+    "membership": "gold"
+  }
+]
