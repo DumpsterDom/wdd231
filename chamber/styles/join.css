@@ -166,13 +166,6 @@ header .logo .chamber-title {
   font-weight: 400;
 }
 
-.join-container h1 {
-  text-align: center;
-  font-size: 2.8rem;
-  margin-bottom: 0.5rem;
-  color: var(--blue);
-}
-
 /* Nav */
 #mainNav ul {
   display: flex !important;
@@ -284,10 +277,6 @@ header .logo .chamber-title {
   margin-bottom: 0.4rem;
   font-weight: 600;
   position: relative;
-}
-
-.required {
-  color: #9a3412;
 }
 
 .membership-form label span::after {
@@ -462,12 +451,6 @@ header .logo .chamber-title {
   background: #f8f9fa;
   padding: 1.5rem;
   border-radius: 8px;
-}
-
-#submitted-data dt {
-  font-weight: 600;
-  color: var(--blue);
-  margin-top: 1rem;
 }
 
 .home-btn {
