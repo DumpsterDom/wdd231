@@ -1,4 +1,3 @@
-/* Base */
 :root {
   --blue: #5995BA;
   --red: #9a3412;
@@ -266,18 +265,27 @@ footer a:hover {
   color: var(--dark);
 }
 
-/* Discover Page Specific Styles */
+/* Discover */
 .discover-hero {
   text-align: center;
   padding: 4rem 1rem;
-  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../images/gastonia-skyline.webp');
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
   background-size: cover;
   background-position: center;
   color: white;
   margin-bottom: 2rem;
 }
-.discover-hero h1 { font-size: 3rem; margin-bottom: 0.5rem; }
-.discover-hero p { font-size: 1.3rem; max-width: 800px; margin: 0 auto; }
+
+.discover-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.discover-hero p {
+  font-size: 1.3rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
 
 .visit-message {
   background: var(--blue);
@@ -287,10 +295,10 @@ footer a:hover {
   font-weight: 600;
   margin: 0 1rem 2rem;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* GRID LAYOUT WITH NAMED AREAS */
+/* GRID */
 .discover-grid {
   display: grid;
   gap: 1.5rem;
@@ -299,7 +307,6 @@ footer a:hover {
   margin: 0 auto;
 }
 
-/* Small screens (320px - 640px) */
 @media (max-width: 640px) {
   .discover-grid {
     grid-template-areas:
@@ -310,46 +317,89 @@ footer a:hover {
       "card5"
       "card6"
       "card7"
-      "card8";
+      "card8"
+      "card9"
+      "card10";
   }
 }
 
-/* Medium screens (641px - 1024px) */
-@media (min-width: 641px) and (max-width: 1024px) {
+@media only screen and (min-width: 35rem) {
   .discover-grid {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "card1 card2"
       "card3 card4"
       "card5 card6"
-      "card7 card8";
+      "card7 card8"
+      "card9 card10";
   }
 }
 
-/* Large screens (1025px+) */
-@media (min-width: 1025px) {
+@media only screen and (min-width: 64rem)  {
   .discover-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(1fr, 1fr);
     grid-template-areas:
-      "card1 card2 card3 card4"
-      "card5 card6 card7 card8";
+     "card1 card2"
+      "card3 card4"
+      "card5 card6"
+      "card7 card8"
+      "card9 card10";
   }
 }
 
-/* Card Styling */
+/* Card */
+#allplaces div {
+  margin: 1rem 8px;
+  border: 1px solid #999;
+  background-color: #eee;
+  border-radius: 8px;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-areas:
+  "name"
+  "image"
+  "desc"
+  "address"
+}
+
+#allplaces div h2 {
+  margin: 1rem 10px;
+  grid-area: name;
+}
+
+#allplaces div img {
+  width: 100%;
+  grid-area: image;
+}
+
+#allplaces div p {
+  margin: 1rem 10px;
+  grid-area: desc;
+}
+
+#allplaces div address {
+  margin: 1rem 10px;
+  grid-area: address;
+}
+
 .discover-card {
   background: white;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
-.discover-card:hover { transform: translateY(-8px); }
+
+.discover-card:hover {
+  transform: translateY(-8px);
+}
 
 .discover-card figure {
   margin: 0;
   overflow: hidden;
 }
+
 .discover-card img {
   width: 100%;
   height: 200px;
@@ -357,7 +407,7 @@ footer a:hover {
   transition: transform 0.4s ease, filter 0.4s ease;
 }
 
-/* Hover effect ONLY on desktop (not mobile) */
+/* Hover */
 @media (min-width: 641px) {
   .discover-card:hover img {
     transform: scale(1.15);
@@ -369,21 +419,25 @@ footer a:hover {
   padding: 1.5rem;
   text-align: center;
 }
+
 .card-content h2 {
   margin: 0 0 0.8rem;
   color: var(--blue);
   font-size: 1.4rem;
 }
+
 .card-content address {
   font-style: normal;
   color: #555;
   margin-bottom: 0.8rem;
 }
+
 .card-content p {
   color: #666;
   margin-bottom: 1rem;
   line-height: 1.5;
 }
+
 .card-content button {
   background: var(--blue);
   color: white;
@@ -393,6 +447,7 @@ footer a:hover {
   cursor: pointer;
   font-weight: 600;
 }
+
 .card-content button:hover {
   background: #00215a;
 }

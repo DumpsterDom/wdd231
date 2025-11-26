@@ -1,30 +1,29 @@
-// scripts/discover.js
-import attractions from 'data/discover.json';
+
+import places from '../data/places.mjs';
 
 const grid = document.getElementById('discoverGrid');
 const visitMessage = document.getElementById('visit-message');
 
-// Render Cards
-attractions.forEach(attr => {
+// Cards
+places.forEach(place => {
   const card = document.createElement('article');
   card.className = 'discover-card';
-  card.style.gridArea = attr.area;
+  card.style.gridArea = place.area;  // now works!
 
   card.innerHTML = `
     <figure>
-      <img src="${attr.image}" alt="${attr.name}" width="300" height="200" loading="lazy">
+      <img src="${place.image}" alt="${place.name}" width="300" height="200" loading="lazy">
     </figure>
     <div class="card-content">
-      <h2>${attr.name}</h2>
-      <address>${attr.address}</address>
-      <p>${attr.description}</p>
+      <h2>${place.name}</h2>
+      <address>${place.address}</address>
+      <p>${place.description}</p>
       <button>Learn More</button>
     </div>
   `;
   grid.appendChild(card);
 });
 
-// Visit Counter Logic
 const lastVisit = localStorage.getItem('lastVisit');
 const now = Date.now();
 
@@ -41,7 +40,6 @@ if (!lastVisit) {
   }
 }
 
-// Always update last visit time
 localStorage.setItem('lastVisit', now);
 
 // Footer
