@@ -298,54 +298,6 @@ footer a:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* GRID */
-.discover-grid {
-  display: grid;
-  gap: 1.5rem;
-  padding: 0 1rem;
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-@media (max-width: 640px) {
-  .discover-grid {
-    grid-template-areas:
-      "card1"
-      "card2"
-      "card3"
-      "card4"
-      "card5"
-      "card6"
-      "card7"
-      "card8"
-      "card9"
-      "card10";
-  }
-}
-
-@media only screen and (min-width: 35rem) {
-  .discover-grid {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "card1 card2"
-      "card3 card4"
-      "card5 card6"
-      "card7 card8"
-      "card9 card10";
-  }
-}
-
-@media only screen and (min-width: 64rem)  {
-  .discover-grid {
-    grid-template-columns: repeat(1fr, 1fr);
-    grid-template-areas:
-     "card1 card2"
-      "card3 card4"
-      "card5 card6"
-      "card7 card8"
-      "card9 card10";
-  }
-}
 
 /* Card */
 #allplaces div {
