@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Creamy Garlic Parmesan Pasta",
+    "ingredients": ["pasta", "garlic", "cream", "parmesan", "butter", "olive oil"],
+    "img": "images/garlicpasta.jpg",
+    "time": "15 min",
+    "serves": 4
+  },
+  {
+    "name": "One Pan Honey Garlic Chicken",
+    "ingredients": ["chicken", "honey", "garlic", "soy sauce", "butter"],
+    "img": "images/honeychciken.jpg",
+    "time": "25 min",
+    "serves": 4
+  },
+  {
+    "name": "Thai Coconut Vegetable Curry",
+    "ingredients": ["coconut milk", "curry paste", "vegetables", "rice", "onion"],
+    "img": "images/taicurry.jpg",
+    "time": "30 min",
+    "serves": 4
+  },
+  {
+    "name": "Classic Tomato Basil Soup",
+    "ingredients": ["tomatoes", "basil", "onion", "garlic", "broth", "cream"],
+    "img": "images/tomatosoup.jpg",
+    "time": "35 min",
+    "serves": 6
+  },
+  {
+    "name": "Beef Tacos",
+    "ingredients": ["ground beef", "tortillas", "lettuce", "cheese", "tomato", "onion"],
+    "img": "images/beeftaco.jpg",
+    "time": "20 min",
+    "serves": 4
+  },
+  {
+    "name": "Shakshuka",
+    "ingredients": ["eggs", "tomatoes", "onion", "bell pepper", "garlic", "cumin"],
+    "img": "images/shakshuka.jpg",
+    "time": "25 min",
+    "serves": 3
+  },
+  {
+    "name": "Chicken Fried Rice",
+    "ingredients": ["rice", "chicken", "eggs", "soy sauce", "vegetables", "garlic"],
+    "img": "images/chickenrice.jpg",
+    "time": "20 min",
+    "serves": 4
+  },
+  {
+    "name": "Pesto Pasta",
+    "ingredients": ["pasta", "basil", "garlic", "pine nuts", "parmesan", "olive oil"],
+    "img": "images/pesto.jpg",
+    "time": "15 min",
+    "serves": 4
+  },
+  {
+    "name": "Chickpea Curry",
+    "ingredients": ["chickpeas", "coconut milk", "tomatoes", "onion", "garlic", "curry powder"],
+    "img": "images/chickpeacurry.jpg",
+    "time": "30 min",
+    "serves": 5
+  },
+  {
+    "name": "Margherita Pizza",
+    "ingredients": ["pizza dough", "tomatoes", "mozzarella", "basil", "olive oil"],
+    "img": "images/margherita.jpg",
+    "time": "20 min",
+    "serves": 2
+  },
+  {
+    "name": "Banana Pancakes",
+    "ingredients": ["bananas", "eggs", "flour", "milk", "baking powder"],
+    "img": "images/bananapancakes.jpg",
+    "time": "15 min",
+    "serves": 2
+  },
+  {
+    "name": "Lentil Soup",
+    "ingredients": ["lentils", "carrots", "onion", "garlic", "broth", "cumin"],
+    "img": "images/lentil.jpg",
+    "time": "40 min",
+    "serves": 6
+  },
+  {
+    "name": "Garlic Butter Shrimp",
+    "ingredients": ["shrimp", "butter", "garlic", "lemon", "parsley"],
+    "img": "images/shrimp.jpg",
+    "time": "15 min",
+    "serves": 4
+  },
+  {
+    "name": "Vegetable Stir Fry",
+    "ingredients": ["vegetables", "soy sauce", "garlic", "ginger", "rice"],
+    "img": "images/stirfry.jpg",
+    "time": "20 min",
+    "serves": 4
+  },
+  {
+    "name": "Chocolate Mug Cake",
+    "ingredients": ["flour", "sugar", "cocoa", "milk", "oil", "chocolate chips"],
+    "img": "images/mugcake.jpg",
+    "time": "5 min",
+    "serves": 1
+  }
+]
