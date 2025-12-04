@@ -1,4 +1,4 @@
-// Load recipes from JSON file
+// Load recipes JSON 
 async function loadRecipes() {
   try {
     const response = await fetch('data/recipes.json');
@@ -24,17 +24,17 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+// Recipes
 function renderRecipes(recipes) {
   const pantry = JSON.parse(localStorage.getItem('pantry') || '[]').map(i => i.toLowerCase());
   const recommendations = document.getElementById('recommendations');
   const container = document.getElementById('allRecipes');
   let matches = 0;
 
-  // Clear previous content
   recommendations.innerHTML = '';
   container.innerHTML = '';
 
-  // Create matches section
+  // Create matches
   const matchHeading = document.createElement('h2');
   matchHeading.textContent = 'You Can Make These Right Now!';
   matchHeading.style.cssText = 'text-align:center; color:var(--green); margin:2rem 0; font-size:2.2rem;';
@@ -69,10 +69,9 @@ function renderRecipes(recipes) {
     }
   });
 
-  // Update match count
   document.getElementById('matchCount').textContent = matches;
 
-  // Show matches section if any
+  // Show matches 
   if (matches > 0) {
     recommendations.appendChild(matchHeading);
     recommendations.appendChild(matchGrid);
@@ -80,7 +79,7 @@ function renderRecipes(recipes) {
     recommendations.innerHTML = '<p style="text-align:center; padding:4rem; font-size:1.2rem;">No perfect matches yet — add more ingredients to your pantry!</p>';
   }
 
-  // Show "All Recipes" heading only if there are non-matches
+  // Show All Recipes
   if (container.children.length > 0) {
     const allHeading = document.createElement('h2');
     allHeading.textContent = 'All Recipes';
@@ -89,5 +88,4 @@ function renderRecipes(recipes) {
   }
 }
 
-// Run when page loads
 document.addEventListener('DOMContentLoaded', loadRecipes);

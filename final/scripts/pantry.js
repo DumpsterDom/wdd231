@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+// Pantry  //
 function loadPantry() {
   const items = JSON.parse(localStorage.getItem('pantry') || '[]');
   list.innerHTML = '';
