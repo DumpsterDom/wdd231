@@ -20,15 +20,25 @@
 <body>
   <header>
     <div class="header-inner">
+    <!-- Logo -->
       <a href="index.html" class="logo">
         <img src="images/logo.jpg" alt="Smart Pantry Logo" width="80" height="80">
         <span class="chamber-title">Smart Pantry</span>
       </a>
-      <nav id="mainNav">
+
+      <!-- Hamburger button -->
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Nav -->
+      <nav id="mainNav" class="nav-closed">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="pantry.html">My Pantry</a></li>
-          <li><a href="recipes.html" class="active">Recipes</a></li>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="pantry.html" class="nav-link">My Pantry</a></li>
+          <li><a href="recipes.html" class="nav-link">Recipes</a></li>
         </ul>
       </nav>
     </div>
@@ -65,8 +75,7 @@
       <div class="submit-card">
         <h2>Love Cooking?</h2>
         <p>Share your favorite go-to recipe with the Smart Pantry community!<br>We'll feature the best ones for everyone to enjoy.</p>
-        <a href="https://" target="_blank" class="cta-button submit-btn">
-          Submit Your Recipe
+        <a href="submit.html" class="cta-button submit-btn">Submit Your Recipe</a>
         </a>
       </div>
     </section>
@@ -88,7 +97,7 @@
     </div>
   </footer>
 
-  <script src="scripts/recipes.js"></script>
-  <script src="scripts/index.js"></script>
+  <script type="module" src="scripts/recipes.js"></script>
+  <script type="module" src="scripts/index.js"></script>
 </body>
 </html>

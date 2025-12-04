@@ -4,6 +4,20 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('lastMod').textContent = document.lastModified;
 });
 
+// Hamburger
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.querySelector('.hamburger');
+  const nav = document.getElementById('mainNav');
+
+  if (hamburger && nav) {
+    hamburger.addEventListener('click', () => {
+      const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', !expanded);
+      nav.classList.toggle('nav-open');
+    });
+  }
+});
+
 // Carousel 
 const track = document.querySelector('.carousel-track');
 const slides = Array.from(track.children);

@@ -10,6 +10,20 @@ async function loadRecipes() {
   }
 }
 
+// Hamburger
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.querySelector('.hamburger');
+  const nav = document.getElementById('mainNav');
+
+  if (hamburger && nav) {
+    hamburger.addEventListener('click', () => {
+      const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', !expanded);
+      nav.classList.toggle('nav-open');
+    });
+  }
+});
+
 function renderRecipes(recipes) {
   const pantry = JSON.parse(localStorage.getItem('pantry') || '[]').map(i => i.toLowerCase());
   const recommendations = document.getElementById('recommendations');

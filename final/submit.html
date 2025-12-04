@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit Recipe | Smart Pantry</title>
+  <link rel="icon" href="images/chef.ico" type="image/x-icon">
+  <meta name="description" content="Share your favorite recipe with the Smart Pantry community">
+  <meta name="author" content="Dominic Trujillo-Grissom">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/submit.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo.jpg" alt="Smart Pantry Logo" width="80" height="80">
+        <span class="chamber-title">Smart Pantry</span>
+      </a>
+      <nav id="mainNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pantry.html">My Pantry</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="home">
+    <section class="hero">
+      <img src="images/food8.jpg" alt="Share your recipe" class="hero-image">
+      <div class="hero-card-container">
+        <div class="hero-card">
+          <h1>Submit Your Recipe</h1>
+          <p>Help others cook what they have & share your favorites!</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <section class="pantry-section">
+        <form action="thanks.html" method="GET" novalidate>
+          <div class="form-group">
+            <label for="recipeName">Recipe Name <span class="required">*</span></label>
+            <input type="text" id="recipeName" name="recipeName" required placeholder="e.g. Grandma's Chili">
+          </div>
+
+          <div class="form-group">
+            <label for="yourName">Your Name (optional)</label>
+            <input type="text" id="yourName" name="yourName" placeholder="So we can give you credit">
+          </div>
+
+          <div class="form-group">
+            <label for="ingredients">Ingredients (one per line) <span class="required">*</span></label>
+            <textarea id="ingredients" name="ingredients" rows="8" required 
+              placeholder="chicken&#10;rice&#10;soy sauce&#10;garlic&#10;eggs"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="instructions">Quick Instructions (optional)</label>
+            <textarea id="instructions" name="instructions" rows="5" 
+              placeholder="Sauté garlic, add chicken..."></textarea>
+          </div>
+
+          <div class="action-buttons">
+            <button type="submit" class="cta-button large-cta">Submit Recipe</button>
+            <a href="recipes.html" class="clear-btn">Cancel</a>
+          </div>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="contact">
+        <p><strong>Smart Pantry</strong> - Recipe Recommendations</p>
+        <p>Dominic Trujillo-Grissom</p>
+      </div>
+      <div class="me">
+        <p>© <span id="year"></span> Smart Pantry | WDD 231 Project</p>
+        <p>Last modified: <span id="lastMod"></span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="scripts/index.js"></script>
+</body>
+</html>

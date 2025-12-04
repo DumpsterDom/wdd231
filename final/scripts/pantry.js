@@ -3,6 +3,20 @@ const addBtn = document.getElementById('addBtn');
 const list = document.getElementById('pantryList');
 const clearBtn = document.getElementById('clearBtn');
 
+// Hamburger
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.querySelector('.hamburger');
+  const nav = document.getElementById('mainNav');
+
+  if (hamburger && nav) {
+    hamburger.addEventListener('click', () => {
+      const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', !expanded);
+      nav.classList.toggle('nav-open');
+    });
+  }
+});
+
 function loadPantry() {
   const items = JSON.parse(localStorage.getItem('pantry') || '[]');
   list.innerHTML = '';

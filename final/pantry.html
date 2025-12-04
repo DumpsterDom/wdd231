@@ -18,15 +18,25 @@
 <body>
   <header>
     <div class="header-inner">
+    <!-- Logo -->
       <a href="index.html" class="logo">
         <img src="images/logo.jpg" alt="Smart Pantry Logo" width="80" height="80">
         <span class="chamber-title">Smart Pantry</span>
       </a>
-      <nav id="mainNav">
+
+      <!-- Hamburger button -->
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Nav -->
+      <nav id="mainNav" class="nav-closed">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="pantry.html" class="active">My Pantry</a></li>
-          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="pantry.html" class="nav-link">My Pantry</a></li>
+          <li><a href="recipes.html" class="nav-link">Recipes</a></li>
         </ul>
       </nav>
     </div>
@@ -81,7 +91,6 @@
         </div>
       </section>
     </div>
-
   </main>
 
   <footer>
@@ -97,7 +106,7 @@
     </div>
   </footer>
 
-  <script src="scripts/pantry.js"></script>
-  <script src="scripts/index.js"></script>
+  <script type="module" src="scripts/pantry.js"></script>
+  <script type="module" src="scripts/index.js"></script>
 </body>
 </html>

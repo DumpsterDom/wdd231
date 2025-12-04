@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You! | Smart Pantry</title>
+  <link rel="icon" href="images/chef.ico" type="image/x-icon">
+  <meta name="description" content="Thank you for submitting your recipe!">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/submit.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo.jpg" alt="Smart Pantry Logo" width="80" height="80">
+        <span class="chamber-title">Smart Pantry</span>
+      </a>
+      <nav id="mainNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pantry.html">My Pantry</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="home">
+    <section class="hero">
+      <img src="images/food7.jpg" alt="Thank you" class="hero-image">
+      <div class="hero-card-container">
+        <div class="hero-card">
+          <h1>Thank You!</h1>
+          <p>We received your recipe:</p>
+          <h2 id="recipeTitle" style="color:var(--green); margin:1rem 0;"></h2>
+          <p><strong>Submitted by:</strong> <span id="submitter"></span></p>
+          <a href="index.html" class="cta-button large-cta">Back to Home</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  document.getElementById('recipeTitle').textContent = params.get('recipeName') || 'Untitled Recipe';
+  document.getElementById('submitter').textContent = params.get('yourName') || 'Anonymous';
+</script>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="contact">
+        <p><strong>Smart Pantry</strong> - Recipe Recommendations</p>
+        <p>Dominic Trujillo-Grissom</p>
+      </div>
+      <div class="me">
+        <p>© <span id="year"></span> Smart Pantry | WDD 231 Project</p>
+        <p>Last modified: <span id="lastMod"></span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="scripts/index.js"></script>
+</body>
+</html>
