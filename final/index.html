@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Smart Pantry - Get recipe ideas based on ingredients you already have at home." />
   <meta name="author" content="Dominic Trujillo-Grissom" />
 
@@ -19,17 +19,18 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/index.css" />
+  <link rel="stylesheet" href="styles/indexmobile.css" />
 </head>
 <body>
   <header>
     <div class="header-inner">
-    <!-- Logo -->
+      <!-- Logo -->
       <a href="index.html" class="logo">
         <img src="images/logo.jpg" alt="Smart Pantry Logo" width="80" height="80">
         <span class="chamber-title">Smart Pantry</span>
       </a>
 
-      <!-- Hamburger button -->
+      <!-- Hamburger -->
       <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
         <span></span>
         <span></span>
@@ -39,7 +40,7 @@
       <!-- Nav -->
       <nav id="mainNav" class="nav-closed">
         <ul>
-          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="index.html" class="nav-link active">Home</a></li>
           <li><a href="pantry.html" class="nav-link">My Pantry</a></li>
           <li><a href="recipes.html" class="nav-link">Recipes</a></li>
         </ul>
@@ -50,18 +51,17 @@
   <main class="home">
     <!-- Hero -->
     <section class="hero">
-      <img src="images/food1.jpg" alt="Delicious homemade cooking" class="hero-image" fetchpriority="high">
-      
+      <img src="images/food1.jpg" alt="Delicious homemade meal" class="hero-image" fetchpriority="high">
       <div class="hero-card-container">
         <div class="hero-card">
           <h1>Cook What You Have</h1>
           <p>Stop food waste. Discover amazing recipes using ingredients already in your kitchen.</p>
-          <a href="pantry.html" class="cta-button">Check My Pantry</a>
+          <a href="pantry.html" class="cta-button large-cta">Check My Pantry</a>
         </div>
       </div>
     </section>
 
-    <!-- carousel -->
+    <!-- Recipe View -->
     <section class="carousel-section">
       <div class="container">
         <h2>Top Recipes This Week</h2>
@@ -77,7 +77,7 @@
             <div class="carousel-slide">
               <img src="images/honeychciken.jpg" alt="Honey Garlic Chicken">
               <div class="slide-caption">
-                <h3>One Pan Honey Garlic Chicken</h3>
+                <h3>One-Pan Honey Garlic Chicken</h3>
                 <p>Sweet, sticky, and easy cleanup</p>
               </div>
             </div>
@@ -89,30 +89,26 @@
               </div>
             </div>
           </div>
-          <button class="carousel-prev">❮</button>
-          <button class="carousel-next">❯</button>
-          <div class="carousel-dots"></div>
+          <button class="carousel-prev" aria-label="Previous slide">Previous</button>
+          <button class="carousel-next" aria-label="Next slide">Next</button>
+          <div class="carousel-dots" role="tablist"></div>
         </div>
       </div>
     </section>
 
+    <!-- Mission -->
     <section class="mission-section">
-      <div class="mission-bg">
-        <img src="images/food2.jpg" alt="Fresh ingredients and kitchen" class="mission-bg-img" loading="lazy">
-        
-        <div class="mission-overlay"></div>
-
-        <!-- Mission -->
-        <div class="mission-card">
-          <h2>Our Mission</h2>
-          <p>We believe no one should ever wonder “What can I cook tonight?” when their kitchen is already full of possibilities.</p>
-          <p>Smart Pantry helps you turn the ingredients you already have into delicious, waste free meals, one pantry at a time.</p>
-          <p><strong>Less waste. More flavor. Real cooking, made simple.</strong></p>
-        </div>
+      <img src="images/food3.jpg" alt="Our mission" class="mission-bg-img" loading="lazy">
+      <div class="mission-overlay"></div>
+      <div class="mission-card">
+        <h2>Our Mission</h2>
+        <p>We believe no one should ever wonder “What can I cook tonight?” when their kitchen is already full of possibilities.</p>
+        <p>Smart Pantry helps you turn the ingredients you already have into delicious, waste-free meals — one pantry at a time.</p>
+        <p><strong>Less waste. More flavor. Real cooking, made simple.</strong></p>
       </div>
     </section>
 
-    <!-- Cooking Tips -->
+    <!-- Tips  -->
     <section class="tips-section">
       <div class="container">
         <h2>Cooking Tips & Resources</h2>
@@ -132,6 +128,7 @@
         </div>
       </div>
     </section>
+  </main>
 
   <footer>
     <div class="footer-inner">
@@ -140,11 +137,12 @@
         <p>Dominic Trujillo-Grissom</p>
       </div>
       <div class="me">
-        <p><a href="references.html" style="color:#ccc; font-size:0.9rem;">References</a> | © <span id="year"></span> Smart Pantry</p>
+        <a href="references.html" class="footer-link">References</a> | © <span id="year"></span> Smart Pantry</p>
         <p>Last modified: <span id="lastMod"></span></p>
       </div>
     </div>
   </footer>
+
   <script type="module" src="scripts/index.js"></script>
 </body>
 </html>

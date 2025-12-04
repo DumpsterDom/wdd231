@@ -1,0 +1,29 @@
+@media (max-width: 768px) {
+  .carousel-track { height: 400px; }
+  .slide-caption h3 { font-size: 1.8rem; }
+  .slide-caption p { font-size: 1.1rem; }
+  .carousel-prev, .carousel-next { width: 48px; height: 48px; font-size: 1.6rem; }
+}
+
+@media (max-width: 480px) {
+  .carousel-track { height: 340px; }
+  .slide-caption { padding: 2rem 1rem 1.5rem; }
+}
+
+@media (max-width: 768px) {
+  .mission-section {
+    height: 85vh;
+    min-height: 600px;
+  }
+  .mission-card {
+    padding: 3.5rem 3rem;
+    border-radius: 32px;
+    width: 94%;
+  }
+  .mission-card h2 {
+    font-size: 2.9rem;
+  }
+  .mission-card p {
+    font-size: 1.3rem;
+  }
+}
