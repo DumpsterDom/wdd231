@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/poppins-latin-w400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-display: swap;
+  src: url('../fonts/poppins-latin-w600.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 800;
+  font-display: swap;
+  src: url('../fonts/poppins-latin-w800.woff2') format('woff2');
+}
