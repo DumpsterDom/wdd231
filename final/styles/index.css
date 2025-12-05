@@ -752,3 +752,18 @@ footer a:hover {
   color: #fff;
   text-decoration: underline;
 }
+
+.video-link {
+  color: #ff6b6b !important;       
+  font-weight: 600;
+}
+
+.video-link:hover {
+  color: #ff4757 !important;
+  text-decoration: underline;
+}
+
+.video-link::before {
+  content: "▶ ";
+  font-size: 0.9em;
+}
